@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Controlled Particle System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading">Initializing Vision & Graphics...</div>
+
+    <div id="ui">
+        <h1>Particle Morph</h1>
+        <div class="instruction">☝️ 1 Finger: Heart</div>
+        <div class="instruction">✌️ 2 Fingers: Saturn</div>
+        <div class="instruction">🤟 3 Fingers: Flower</div>
+        <div class="instruction">🖐 5 Fingers: Sphere</div>
+        <div class="instruction">✊ Fist: Collapse & Red</div>
+        <p>👌 Pinch to Zoom/Expand | 👋 Move hand to Rotate</p>
+    </div>
+
+    <video id="video" playsinline></video>
+    
+    <div id="canvas-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
