@@ -1,8 +1,73 @@
-body { margin: 0; overflow: hidden; background-color: #000; font-family: sans-serif; }
-#canvas-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
-video { position: absolute; top: 10px; left: 10px; width: 160px; height: 120px; z-index: 2; transform: scaleX(-1); border-radius: 8px; opacity: 0.7; }
-#ui { position: absolute; top: 10px; right: 10px; color: white; z-index: 2; text-align: right; pointer-events: none; }
-h1 { font-size: 1.2rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
-p { font-size: 0.8rem; opacity: 0.8; }
-.instruction { background: rgba(255,255,255,0.1); padding: 5px 10px; margin-top: 5px; border-radius: 4px; display: inline-block;}
-#loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00ffff; font-size: 2rem; z-index: 10; }
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    font-family: sans-serif;
+}
+
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+video {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 160px;
+    height: 120px;
+    z-index: 2;
+    transform: scaleX(-1); /* Mirror the video */
+    border-radius: 8px;
+    opacity: 0.7;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#ui {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    z-index: 2;
+    text-align: right;
+    pointer-events: none; /* Let clicks pass through to canvas */
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 8px;
+}
+
+.instruction {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    backdrop-filter: blur(4px);
+}
+
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00ffff;
+    font-size: 2rem;
+    z-index: 10;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffff;
+}
